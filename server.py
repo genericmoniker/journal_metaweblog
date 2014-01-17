@@ -25,7 +25,8 @@ import os.path
 
 PORT = 8085
 BLOG_URL = "http://localhost:{0}".format(PORT)
-HTML = u'<html><head><title>{0}</title><meta charset="utf-8"></head><body><p>{0}</p>{1}</body></html>'
+HTML = (u'<html><head><title>{0}</title><meta charset="utf-8"></head>'
+        '<body><p>{0}</p>{1}</body></html>')
 
 
 def get_user_blogs(key, username, password):
@@ -61,6 +62,9 @@ def _get_filename(n):
 
 def _write_html(filename, title, body):
     print 'Saving HTML to ' + filename
+    directory = os.path.dirname(filename)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
     with open(filename, 'w') as f:
         f.write(HTML.format(title, body).encode("utf-8"))
 

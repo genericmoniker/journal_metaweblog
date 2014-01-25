@@ -19,27 +19,44 @@ Setting Up Windows Live Writer
 ------------------------------
 
 What blog service do you use?
+
 __Other services__
 
 Add blog account
+
 Web address of your blog:
+
 __http://localhost:8085__
+
 User name:
+
 _Anything_
+
 Password:
+
 _Anything_
+
 Check Remember my password
 
+
 Select blog type
+
 Type of blog that you are using:
+
 __Metaweblog API__
+
 Remote posting web address for your blog:
+
 __http://localhost:8085__
 
+
 Select blog
+
 __Save HTML__
 
+
 Download Blog Theme
+
 __No__
 
 
